@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">American Pizza</h1>
+    <p id="description">
+        We're gathering feedback to make your pizza experience even better! It only takes a few minutes, and your input ensures
+        every slice is as perfect as you deserve.
+    </p>
+    <form id="survey-form" action="">
+        <section id="personal-information">
+
+            <div>
+                <label id="name-label" for="name-label">Name (required):</label>
+                <input id="name" type="text" name="name" placeholder="e.g. John Doe" required>
+            </div>
+            <div>
+                <label id="email-label" for="email-label">Email (required):</label>
+                <input id="email" type="email" name="email" placeholder="example@email.com" required>
+            </div>
+            <div>
+                <label id="number-label" for="number-label">Age (optional):</label>
+                <input id="number" type="number" name="age" min="18" max="100" size="30" placeholder="Enter age" value="18">
+            </div>
+        </section>
+
+        <fieldset id="food-and-services">
+            <legend>Food and Services</legend>
+            <h3>Was your order prepared accurately and promptly?</h3>
+            <input id="yes-option" type="radio" name="prepared-order">
+            <label for="yes-option">Yes</label>
+            <input id="no-option" type="radio" name="prepared-order">
+            <label for="no-option">No</label>
+            <h3>Any Favorites?</h3>
+            <section id="any-favorites">
+                <div>
+
+                    <h4>favorite toppings:</h4>
+                    <input type="checkbox" value="">
+                    <label for="">Vegetables</label>
+                    <input type="checkbox" value="">
+                    <label for="">Cheeses</label>
+                    <input type="checkbox" value="">
+                    <label for="">Fruits</label>
+                    <input type="checkbox" value="">
+                    <label for="">meats</label>
+                    <input type="checkbox" value="">
+                    <label for="">Specialty meats</label>
+                    <input type="checkbox" value="">
+                    <label for="">Sauces</label>
+                </div>
+                <div>
+
+                    <h4>Favorite menu items:</h4>
+                    <input type="checkbox" value="">
+                    <label for="">Pizzas</label>
+                    <input type="checkbox" value="">
+                    <label for="">Sides and Appetizers</label>
+                    <input type="checkbox" value="">
+                    <label for="">Wings</label>
+                    <input type="checkbox" value="">
+                    <label for="">Salads</label>
+                    <input type="checkbox" value="">
+                    <label for=""></label>
+                    <input type="checkbox" value="">
+                    <label for="">Pastas</label>
+                    <input type="checkbox" value="">
+                    <label for="">Sandwiches</label>
+                    <input type="checkbox" value="">
+                    <label for="">Desserts</label>
+                    <input type="checkbox" value="">
+                    <label for="">Drinks</label>
+                </div>
+            </section>
+
+            <h4>Which new menu items would you like to see? (Check all that apply)</h4>
+            <section id="new-items-suggestion">
+
+                <input type="checkbox" value="">
+                <label for="">Spicy Chicken Pizza</label>
+                <input type="checkbox" value="">
+                <label for="">Wings Flavorings</label>
+                <input type="checkbox" value="">
+                <label for="">Vegetable Options</label>
+                <input type="checkbox" value="">
+                <label for="">Fruit Options</label>
+                <input type="checkbox" value="">
+                <label for="">Drink Options</label>
+                <input type="checkbox" value="">
+                <label for="">Dessert Options</label>
+                <input type="checkbox" value="">
+                <label for="">Other:</label>
+                <input name="other-suggestions" type="text" min="1" max="100">
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <label for="food-rating-label">How was the food?</label>
+            <select name="food-rating" id="food-rating">
+                <option value="poor">Poor</option>
+                <option value="fair">Fair</option>
+                <option value="good">Good</option>
+                <option selected value="very-good">Very Good</option>
+            </select>
+            <label for="service-rating-label">How was the service?</label>
+            <select name="service-rating" id="service-rating">
+                <option value="poor">Poor</option>
+                <option value="fair">Fair</option>
+                <option value="good">Good</option>
+                <option value="very-good">Very Good</option>
+                <option selected value="excellent">Excellent</option>
+            </select>
+        </fieldset>
+
+        <textarea name="additional-comments" id="additional-comments" placeholder="Additional Comments..." cols="30"
+            rows="10"></textarea>
+
+            <p>Thank you for helping us make every slice better!</p>
+        <button id="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 
 // You should declare the following variables using let:
 
-const adjective = "";
+const adjective = "bright";
 const noun = "";
 const verb = "";
 const place = "";
@@ -19,7 +19,7 @@ const firstStory = `Once upon a time, there was a(n) ${adjective} ${noun} who lo
 console.log(firstStory);
 // You should assign new values to your adjective, noun, verb, place, adjective2, and noun2 variables.
 
-adjective = "";
+adjective = "playful";
 noun = "";
 verb = "";
 place = "";
